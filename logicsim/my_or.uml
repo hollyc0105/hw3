@@ -1,0 +1,93 @@
+0
+0 0
+0
+0
+2 0
+0
+0
+2
+4 0
+0
+0
+2
+4
+6 0
+0
+0
+2
+4
+6
+8 2
+0
+0
+2
+4
+6
+8
+2 0
+8 0
+6 4
+8 4
+2 4
+2 6
+6 2
+0 4
+0 2
+0
+2
+6
+8
+4
+6 2
+4 2
+4 8
+6 4
+8 4
+2 8
+2 4
+2
+4
+6
+8
+6 4
+8 4
+6 8
+8
+@startuml
+binary "input A" as W0
+binary "input B" as W1
+binary "output" as W2
+
+@0
+W0 is {low,high} 
+W1 is {low,high} 
+W2 is {low,high} 
+
+@0
+W0 is low
+
+W1 is low
+
+@0
+W2 is low
+
+@2
+W1 is high
+
+@2
+W2 is high
+
+@4
+W0 is high
+
+@6
+W0 is low
+
+@8
+W1 is low
+
+@8
+W2 is low
+
+@enduml
+

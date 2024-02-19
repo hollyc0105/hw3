@@ -66,8 +66,17 @@ void dealloc(Node* head)
 //   Add any helper functions or
 //   function object struct declarations
 // -----------------------------------------------
+struct odd {
+    bool operator()(int x) {
+        return x%2 != 0;
+    }
+};
 
-
+struct even {
+    bool operator()(int x) {
+        return x%2 == 0;
+    }
+};
 
 
 
@@ -86,10 +95,22 @@ int main(int argc, char* argv[])
     print(head);
 
     // Test out your linked list code
-
-
-
+    /*
+    Node* small = NULL; // set to a non-null address
+	Node* large = NULL; // set to a non-null address
+	llpivot(head, small, large, 42);
     
+    cout << "Smaller list: ";
+    print(small);
+    cout << "Larger list: ";
+    print(large);
+    */
+    odd o;
+    even e;
+    Node* result = NULL;
+    result = llfilter(head, e);
+    print(result);
+
     return 0;
 
 }
