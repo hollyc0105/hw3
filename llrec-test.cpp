@@ -105,7 +105,6 @@ int main(int argc, char* argv[])
     cout << "Larger list: ";
     print(large);
     */
-    odd o;
     even e;
     Node* result = NULL;
     result = llfilter(head, e);

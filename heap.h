@@ -117,9 +117,6 @@ void Heap<T,PComparator>::push(const T& item) {
        break;
      }
   }
-  for (unsigned int i = 0; i < data.size(); i++) {
-    std::cout << data[i]->time << std::endl;
-  }
 }
 
 // We will start pop() for you to handle the case of 
