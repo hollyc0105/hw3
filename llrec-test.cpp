@@ -59,6 +59,7 @@ void dealloc(Node* head)
         temp = head->next;
         delete head;
         head = temp;
+        cout << "test" << endl;
     }
 }
 
@@ -109,7 +110,7 @@ int main(int argc, char* argv[])
     Node* result = NULL;
     result = llfilter(head, e);
     print(result);
-
+    dealloc(result);
     return 0;
 
 }
